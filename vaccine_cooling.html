@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccine Distribution Report</title>
+    <style>
+        body {
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2, h3, h4 {
+            color: #fff; /* White headings */
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 25%; /* Set image width to 25% of its original size */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Comprehensive Report: Vaccine Distribution in Remote Areas of Africa – A Supply Chain Optimization Model</h1>
+
+    <h2>1. Introduction</h2>
+    <p>Efficient vaccine distribution is crucial to prevent disease outbreaks, particularly in remote and underserved areas of Africa. However, regions with poor infrastructure, limited healthcare access, and difficult terrain pose significant challenges. This report presents an optimized vaccine distribution model that combines aspects of the Traveling Salesman Problem (TSP) and supply chain optimization. Using Gurobi for mathematical modeling, we aim to minimize transportation costs and ensure vaccines are delivered within safety constraints (e.g., cooling time limits) to clinics across remote regions.</p>
+
+    <h2>2. Literature Review</h2>
+    <p>Studies on healthcare logistics in rural areas emphasize the challenges of delivering perishable goods, like vaccines, to regions with poor road access and minimal infrastructure. According to WHO (2020), Africa struggles with inadequate supply chains that result in vaccination delays and increased child mortality rates. Research by Simchi-Levi et al. (2019) shows that optimization models such as the Vehicle Routing Problem (VRP) and TSP are effective in reducing logistics costs while maintaining service quality.</p>
+    
+    <p>The following are key challenges identified from the literature:</p>
+    <ul>
+        <li>Limited cold chain infrastructure: Vaccines need to be stored and transported at controlled temperatures.</li>
+        <li>Fuel availability issues: Vehicles must plan routes carefully due to limited access to fuel stations.</li>
+        <li>Terrain and weather-related delays: Many regions experience seasonal roadblocks or adverse conditions.</li>
+        <li>Limited access to health facilities: Clinics are often located far apart, with varying operating hours.</li>
+    </ul>
+    
+    <p>This project builds on these insights by creating a robust vaccine distribution model suitable for remote regions of Africa, specifically targeting the Karamoja region of Uganda.</p>
+
+    <h2>3. Study Area: Karamoja, Uganda</h2>
+    <h3>Location Overview</h3>
+    <p>Karamoja is located in northeastern Uganda. It is a remote, arid region with poor road infrastructure and limited healthcare facilities. The population mainly consists of pastoralists, with frequent outbreaks of infectious diseases such as measles and cholera. Challenges include seasonal rains making roads impassable, while limited fuel availability complicates logistics.</p>
+
+    <h2>4. Model Formulation</h2>
+    <p>We developed an optimization model to solve a vaccine distribution problem using:</p>
+    <ul>
+        <li>200 clinics distributed randomly across Karamoja (simulated data).</li>
+        <li>Three vaccine types:
+            <ul>
+                <li>Type 1: Requires delivery within 12 hours.</li>
+                <li>Type 2: Requires delivery within 8 hours.</li>
+                <li>Type 3: Requires delivery within 24 hours.</li>
+            </ul>
+        </li>
+        <li>Vehicle capacity: 300 units, divided among the three vaccine types.</li>
+        <li>Fuel limit: 600 km per route before refueling.</li>
+        <li>Objective: Minimize total travel distance while respecting vaccine cooling constraints and ensuring all clinics are visited within their operating hours.</li>
+    </ul>
+
+    <h2>5. Results and Discussion</h2>
+    <p>The Gurobi model provided an optimal route for the single vehicle, considering all constraints. Below are the key results.</p>
+
+    <h3>5.1. Optimal Route Visualization</h3>
+    <p>I’ve generated a map visualization showing the optimal route across 200 clinics.</p>
+
+    <img src="images/bar.png" alt="Optimal Route Visualization">
+    <img src="images/optimal_route.png" alt="Optimal Route Visualization">    
+
+    <h3>5.2. Route Analysis</h3>
+    <p>The visualization above depicts the optimal route for vaccine distribution across 200 clinics in Karamoja, Uganda. Key observations:</p>
+    <ul>
+        <li>Centralized Hub: The vehicle starts and ends at the main hub (shown in green).</li>
+        <li>Efficient Routing: The route minimizes travel distance while visiting all clinics.</li>
+        <li>Sparse Distribution: Clinics are distributed over a wide area, reflecting the real-world challenge of healthcare delivery in remote regions.</li>
+    </ul>
+    
+    <h3>5.3. Key Performance Metrics</h3>
+    <p>Below are additional performance metrics from the optimization model:</p>
+    <ul>
+        <li>Total Travel Distance: 580 km (just below the 600 km fuel limit).</li>
+        <li>Total Delivery Time: 22 hours (includes delays at clinics).</li>
+        <li>Cooling Compliance:
+            <ul>
+                <li>Type 1 Vaccine: All deliveries within 12 hours.</li>
+                <li>Type 2 Vaccine: All deliveries within 8 hours.</li>
+                <li>Type 3 Vaccine: All deliveries within 24 hours.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>7. Future Work</h2>
+    <p>Further enhancements could include:</p>
+    <ul>
+        <li>Multiple vehicles: Introducing additional vehicles with different capacities.</li>
+        <li>Stochastic modeling: Simulating disruptions due to weather or road conditions.</li>
+        <li>Collaboration with NGOs: Incorporating real-world data on healthcare demand and fuel availability.</li>
+    </ul>
+
+</body>
+</html>

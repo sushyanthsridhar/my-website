@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh Chaturthi Environmental Study</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin-top: 50px;
+            text-align: left;
+        }
+
+        .images {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* space between images */
+            margin-top: 20px; /* space above images */
+        }
+
+        .images img {
+            max-width: 45%; /* Ensure images don't exceed this width */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        h2, p {
+            margin-left: 30px;
+            margin-right: 30px;
+            line-height: 1.6;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        p {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Ganesh Chaturthi Environmental Study</h1>
+
+
+    <h2>Abstract</h2>
+    <p>This paper addresses the environmental issues associated with the Ganesh Chaturthi festival in Mumbai, specifically focusing on pollution caused by idol immersion. The study proposes the use of a deterministic mixed-integer programming model and demand forecasting techniques to optimize idol production, with efforts to incorporate eco-friendly materials like terracotta. The analysis involves de-seasonalizing demand for idols over the past six years using the Box-Jenkins method to improve forecasting and resource management.</p>
+
+    <div class="images">
+        <img src="images/Graph.png" alt="Description of image 1">
+        <img src="images/SARIMA.png" alt="Description of image 2">
+    </div>
+
+    <h2>Introduction: Mumbai as a Case Study</h2>
+    <p><strong>Ganesh Chaturthi Festival:</strong> The festival attracts millions to Mumbai, posing logistical challenges due to overcrowded public spaces and transportation networks.</p>
+    <p><strong>Pollution Issues:</strong> Increased waste generation, including plastic, food leftovers, and decorations.</p>
+    <p><strong>Noise pollution from firecrackers</strong> and music affects both residents and wildlife.</p>
+    <p><strong>Economic and Cultural Impact:</strong> Demand for idols surges before the festival, supporting local artisans. However, promoting eco-friendly practices is crucial for sustainable celebrations.</p>
+
+    <h2>Water Pollution in Marine Drive</h2>
+    <p><strong>Environmental Impact of Idol Immersion:</strong> Plaster of Paris (PoP) idols release toxic chemicals, heavy metals, and dyes, harming aquatic ecosystems.</p>
+    <p><strong>Organic offerings cause nutrient enrichment,</strong> contributing to eutrophication.</p>
+    <p><strong>Debris accumulation affects marine organisms</strong> through ingestion and entanglement.</p>
+
+    <h2>Solutions Proposed:</h2>
+    <ul>
+        <li>Strict regulations to ban non-biodegradable idols.</li>
+        <li>Awareness campaigns encouraging clay idols and natural dyes.</li>
+        <li>Use of immersion tanks and designated immersion sites to contain pollution.</li>
+    </ul>
+
+    <h2>Eco-Friendly Solutions</h2>
+    <p><strong>Clay (Terracotta) Idols:</strong> Biodegradable and eco-friendly, they release harmless minerals back into the water.</p>
+    <p><strong>Plant-Based Materials:</strong> Utilizing agricultural waste (e.g., coconut husk, rice husks) supports sustainability and reduces waste.</p>
+    <p><strong>Innovative Materials:</strong> Paper mache and natural resins offer lightweight, customizable options with minimal environmental impact.</p>
+
+    <h2>Literature Review</h2>
+    <h3>Demand Forecasting</h3>
+    <p><strong>Methods:</strong> Time series models like ARIMA, exponential smoothing, and neural networks are common techniques.</p>
+    <p><strong>Data Quality:</strong> Effective forecasting relies on integrating data from multiple sources, including social media and weather indicators.</p>
+    <p><strong>Accuracy Metrics:</strong> Mean Absolute Error (MAE), Mean Squared Error (MSE), and Mean Absolute Percentage Error (MAPE) are used to measure accuracy.</p>
+    <p><strong>Challenges:</strong> Forecasting in volatile markets and supply chains with varying lead times and reliability remains complex.</p>
+
+    <h3>Optimization Techniques</h3>
+    <p><strong>Linear and Mixed-Integer Programming (MIP):</strong> These frameworks optimize inventory and production schedules.</p>
+    <p><strong>Integration with Forecasting Models:</strong> Time series methods guide inventory adjustments based on predicted demand.</p>
+    <p><strong>Multi-Objective Optimization:</strong> Tools like genetic algorithms address trade-offs between cost minimization and customer satisfaction.</p>
+
+    <h3>Real-Time Optimization</h3>
+    <p><strong>IoT and Real-Time Data:</strong> Companies use streaming data for dynamic pricing and inventory management.</p>
+    <p><strong>Challenges:</strong> Data quality, model scalability, and cross-functional collaboration are crucial for effective optimization.</p>
+
+    <h2>Seasonal Forecasting: Box-Jenkins Method</h2>
+    <p><strong>Overview:</strong> ARIMA models are effective for forecasting data with seasonal patterns.</p>
+    <p><strong>Implementation:</strong> Moving averages smooth out noise, while exponential smoothing assigns weights to recent data points.</p>
+    <p><strong>Evaluation:</strong> Diagnostic tools like the Ljung-Box test ensure model accuracy, with out-of-sample forecasting used for validation.</p>
+
+    <h2>Methodology</h2>
+    <p><strong>Model Formulation:</strong> A deterministic mixed-integer programming model was implemented using Python and IBM CPLEX on a 13th Gen Intel Core i5 processor. The model integrated de-seasonalized demand data with resource constraints to optimize production schedules.</p>
+
+    <h2>Results</h2>
+    <p><strong>Demand Forecasts:</strong> Predictive modeling highlighted fluctuations in idol orders, with projections provided for the next three years.</p>
+    <p><strong>Optimization Impact:</strong> The use of eco-friendly materials and improved forecasting led to better resource management, minimizing environmental impact while supporting local economies.</p>
+
+</body>
+</html>

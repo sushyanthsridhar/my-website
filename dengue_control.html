@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dengue Control Study</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .top-right-text {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 18px;
+            z-index: 10;
+        }
+
+        h1, h2, p {
+            margin-left: 30px;
+            margin-right: 30px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            margin-top: 50px;
+            text-align: left;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        p {
+            text-align: left;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 90%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Contact details in the top right corner -->
+    <div class="top-right-text">
+        CONTACT <br>
+        Phone: +1 (629) 587-3400 <br>
+        Mail: <a href="mailto:sushyanthsridhar@gmail.com" style="color:white;">sushyanthsridhar@gmail.com</a>
+    </div>
+
+    <!-- Dengue Study Content -->
+    <h1>Dengue Control Study</h1>
+
+    <!-- Image right below the title -->
+    <img src="images/CEZAP.jpg" alt="Dengue Control Study Image">
+
+    <h2>Background</h2>
+    <p><strong>Dengue in Argentina:</strong> Dengue is transmitted by Aedes aegypti, a mosquito species native to tropical and subtropical climates.</p>
+    <p><strong>Historical Spread:</strong> Before 2009, dengue cases were restricted to northern Argentina.</p>
+    <p><strong>Recent Outbreak:</strong> During the 2023-2024 season, Argentina reported over 120,000 cases of dengue.</p>
+    <p><strong>Location Focus:</strong> Córdoba, Argentina</p>
+    <p><strong>Climate:</strong> Córdoba's warm and humid climate, with frequent rainfall, creates a favorable breeding environment for Aedes aegypti.</p>
+    <p><strong>Healthcare Challenge:</strong> A surge in dengue-related deaths raised concerns about the healthcare system’s ability to handle such outbreaks.</p>
+
+    <h2>Statistics</h2>
+    <p><strong>2023-2024 Outbreak in Córdoba:</strong></p>
+    <ul>
+        <li>Total Cases: 566,141</li>
+        <li>Dengue-related Deaths: 415</li>
+        <li>Hospitals Available: 2,500</li>
+        <li>Case-to-Hospital Ratio: 0.0044</li>
+    </ul>
+
+    <h2>Ovitrap Data</h2>
+    <p><strong>Data Collection Timeline:</strong> Egg counts were monitored at 1.5 km intervals from 2009 to 2013, with additional data in 2023-2024.</p>
+    <p><strong>Observations:</strong> A positive correlation was found between temperature and egg counts, indicating that warmer temperatures enhanced mosquito breeding.</p>
+    <p><strong>Forecasting:</strong> Predictive models were developed to fill gaps and extend projections through 2024.</p>
+
+    <h2>Modeling and Simulations</h2>
+    <h3>Mosquito Lifecycle Modeling</h3>
+    <p><strong>Lifecycle Stages:</strong> The simulation follows four key life stages: egg, larva, pupa, and adult mosquito.</p>
+    <p><strong>Development and Mortality Rates:</strong></p>
+    <ul>
+        <li>Egg: Mortality (0.25–0.5), Development (0.4–0.6)</li>
+        <li>Larva: Mortality (0.3–0.5), Development (0.5–0.7)</li>
+        <li>Pupa: Mortality (0.1–0.2), Development (0.87–0.97)</li>
+    </ul>
+    <p><strong>Environmental Variables:</strong> Temperature, diurnal range, and larval density are integrated into the model to assess lifecycle dynamics.</p>
+
+    <h3>Simulation Results</h3>
+    <p><strong>Duration:</strong> Simulations ran for 780 weeks.</p>
+    <p><strong>Key Findings:</strong></p>
+    <ul>
+        <li>Total Eggs: 33,877</li>
+        <li>Total Larvae: 22,619</li>
+        <li>Total Pupae: 15,906</li>
+        <li>Total Adults: 14,643</li>
+        <li>Mortality Rate (Egg to Adult): 43%</li>
+    </ul>
+
+    <h2>Goals of the Study</h2>
+    <p><strong>Forecasting:</strong> Estimate mosquito populations by ovitrap to predict trends for the 2025-2026 season.</p>
+    <p><strong>Optimization:</strong> Use non-linear stochastic models to predict infections, accounting for neighborhood clustering, elevation, and accessibility.</p>
+    <p><strong>Resource Allocation:</strong> Develop a strategy for the placement of testing and treatment centers at optimal locations.</p>
+    <p><strong>Performance Enhancement:</strong> Apply heuristics to minimize the optimality gap in the solutions obtained.</p>
+
+    <h2>Model Description</h2>
+    <p><strong>Compartments:</strong></p>
+    <ul>
+        <li>Mosquito: Divided into four life stages—eggs, larvae, pupae, and adults. Adult females are further classified as susceptible or infectious.</li>
+        <li>Human Population: Classified into five groups: susceptible, exposed, infectious (with DEN-1 to DEN-4 strains), and removed.</li>
+    </ul>
+    <p><strong>Integration:</strong> The mosquito-human interaction model incorporates disease transmission dynamics with stochastic resource allocation.</p>
+
+    <h2>Machine Learning Results</h2>
+    <p><strong>Model Inputs:</strong></p>
+    <ul>
+        <li>X₁: Temperature</li>
+        <li>X₂: Diurnal Temperature Range</li>
+        <li>X₃: Larval Density</li>
+    </ul>
+    <p><strong>Coefficients:</strong> Multiple coefficients (e.g., B₁, B₂, Ba) were used to weigh the variables and determine their impact on outcomes.</p>
+
+    <h2>Acknowledgments</h2>
+    <p><strong>Funding:</strong> The research was supported by the 2024 CeZAP Interdisciplinary Team-Building Pilot Grant.</p>
+    <p><strong>Additional Support:</strong> S. Sridhar and M.A. Robert received funding from the Burroughs Wellcome Fund Climate and Health Interdisciplinary Award (BWF #1022621).</p>
+
+</body>
+</html>

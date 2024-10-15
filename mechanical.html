@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanical - Sushyanth Sridhar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            font-family: 'Playfair Display', serif;
+            height: auto; /* Change to auto to allow for dynamic content height */
+            position: relative; /* Set position to relative for absolute positioning of child elements */
+        }
+
+        .content {
+            text-align: center;
+            margin-top: 50px; /* Adjust this value to match the height on the index page */
+        }
+
+        .bottom-right-text {
+            position: absolute;
+            bottom: 20px; /* Position from the bottom of the page */
+            right: 20px; /* Position from the right of the page */
+            text-align: left; /* Align text to the left */
+        }
+
+        /* New div for the paragraph */
+        .paragraph {
+            text-align: left; /* Align text to the left */
+            margin: 20px auto; /* Center it horizontally with some margin */
+            width: 80%; /* Control the width for better readability */
+        }
+
+        /* Style for buttons */
+        .buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px; /* Adjust this value to control the distance from the paragraph */
+        }
+
+        .button {
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .button:hover {
+            background-color: gray;
+            color: white;
+        }
+
+        /* Style for banner */
+        .banner {
+            margin-top: 50px; /* Space below the buttons */
+            width: 100%; /* Make the banner span across the full width */
+            display: flex;
+            justify-content: center; /* Center the image */
+        }
+
+        .banner img {
+            width: 570px; /* Set the width of the banner image */
+            height: auto; /* Maintain the aspect ratio */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Name and Portfolio title aligned at the top similar to the index page -->
+    <div class="content">
+        <h1>MECHANICAL AND MANUFACTURING SYSTEMS ENGINEERING</h1>
+        <p>Bachelor of Technology, Mechanical Engineering</p>
+        <p> Master of Engineering, Industrial and Systems Engineering</p>
+        
+        <!-- New paragraph div -->
+        <div class="paragraph">
+            <p>I graduated with a Bachelor's degree in Mechanical Engineering from the National Institute of Technology, Warangal, in 2023. During my studies, I explored various disciplines within mechanical engineering, gaining proficiency in Computer-Aided Design (CAD) software and simulation tools such as SCADA. My primary focus was on renewable energies and energy storage systems, which led me to design solutions aimed at sustainability. Over time, I shifted my concentration towards thermal systems and their design optimization, integrating my passion for sustainable design with process improvements in manufacturing systems. This combination of skills allows me to approach engineering challenges with a focus on efficiency and environmental responsibility.</p>
+        </div>
+
+        <!-- Rectangular buttons below the paragraph -->
+        <div class="buttons">
+            <button class="button" onclick="location.href='publication.html';">Publication</button>
+            <button class="button" onclick="location.href='patent.html';">Patent</button>
+            <button class="button" onclick="location.href='internship.html';">Internship</button>
+        </div>
+
+        <!-- Banner image below the buttons -->
+        <div class="banner">
+            <img src="./images/Mech_banner.jpg" alt="Banner Image">
+        </div>
+    </div>
+
+    <!-- Contact details in the bottom right corner -->
+    <div class="bottom-right-text">
+        CONTACT <br>
+        Phone: +1 (629) 587-3400 <br>
+        Mail: <a href="mailto:sushyanthsridhar@gmail.com" style="color:white;">sushyanthsridhar@gmail.com</a>
+    </div>
+
+</body>
+</html>

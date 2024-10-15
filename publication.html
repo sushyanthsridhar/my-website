@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Sushyanth Sridhar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            font-family: 'Playfair Display', serif;
+            height: auto;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .subheading {
+            margin-top: 20px;
+            font-size: 24px;
+            color: lightgray;
+            text-align: center;
+        }
+
+        .publications {
+            text-align: left;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 800px; /* Adjust the width as needed */
+        }
+
+        .publication-item {
+            margin-bottom: 30px;
+        }
+
+        .publication-item h3 {
+            font-size: 24px;
+            color: lightgray;
+            margin-bottom: 10px;
+        }
+
+        .publication-item p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .publication-item ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .back-button {
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+            margin-top: 20px;
+            display: inline-block;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: gray;
+            color: white;
+        }
+
+        /* Style for images */
+        .publication-image {
+            max-width: 150px; /* Ensures responsiveness */
+            height: auto;
+            margin: 10px; /* Adds space around images */
+            transition: transform 0.2s; /* Smooth transition for hover effect */
+            cursor: pointer; /* Changes cursor to pointer for clickable images */
+        }
+
+        .publication-image:hover {
+            transform: scale(1.1); /* Slightly enlarge image on hover */
+        }
+
+        /* Style for the enlarged image modal */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1000; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            max-width: 80%; /* Limit the size of the enlarged image */
+            max-height: 80%; /* Limit the height of the enlarged image */
+            margin: auto;
+        }
+
+        .close {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: red;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page content -->
+    <div class="content">
+        <h1>Publication</h1>
+        
+        <!-- Space for the subheading -->
+        <div class="subheading"></div>
+
+        <div class="publications">
+            <div class="publication-item">
+                <h3>Development and Future Scope of Renewable Energy and Energy Storage Systems</h3>
+                <p><strong>Authors:</strong> Sushyanth Sridhar and Surender Reddy Salkuti</p>
+                <p><strong> Article Views: 8429 | Citations: 23</strong></p>
+                <p><strong>Publication Date:</strong> October 11, 2024</p>
+                <p><strong>Journal Name:</strong> MDPI Smart Cities</p>
+                <p><strong>DOI:</strong> <a href="https://doi.org/10.3390/smartcities5020035" style="color: lightgray;">10.1234/ijrer.2024.5678</a></p>
+                <p><strong>Link to Article:</strong> <a href="https://www.mdpi.com/2624-6511/5/2/35" style="color: lightgray;">https://www.mdpi.com/2624-6511/5/2/35</a></p>
+
+                <p>This article provides a comprehensive review of various renewable energy sources and energy storage systems. It emphasizes the critical role of energy storage in the widespread adoption of renewable energy due to the intermittent nature of sources like wind and solar power.</p>
+
+                <p><strong>Key Points:</strong></p>
+                <ul>
+                    <li><strong>Overview of Renewable Energies:</strong> The authors describe renewable energy as essential for long-term sustainability, mentioning sources like solar, wind, biomass, and hydropower. They highlight the environmental benefits, especially in reducing harmful pollutants from fossil fuel combustion.</li>
+
+                    <br>
+
+                    <li><strong>Energy Storage Technologies:</strong> The paper examines several energy storage systems, including:
+                        <ul>
+                            <li><strong>Compressed Air Energy Storage (CAES):</strong> Utilized in Texas and Germany, this system stores energy by compressing air and releasing it to generate electricity when needed.</li>
+
+                            <br>
+
+                            <li><strong>Regenerative Fuel Cells:</strong> These use hydrogen produced through water electrolysis, storing energy for future use, especially during peak demand.</li>
+
+                            <br>
+
+                            <li><strong>Power-to-Gas (PtG) Technology:</strong> This methane-based system stores renewable energy by converting it into hydrogen and methane for transportation and energy generation.</li>
+
+                            <br>
+
+                            <li><strong>Lithium-ion Batteries:</strong> The review highlights the increasing popularity of Li-ion batteries due to their high energy density and wide range of applications, from electronics to electric vehicles.</li>
+
+                            <br>
+
+                            <li><strong>Flywheel Energy Storage:</strong> A mechanical device storing energy through rotational motion, used in applications like hybrid vehicles.</li>
+
+                            <br>
+
+                            <li><strong>Pumped Hydro Storage:</strong> The most efficient energy storage method, using water pumped to higher elevations during off-peak hours to store potential energy, which is then released during high-demand periods.</li>
+                        </ul>
+                    </li>
+
+                    <br>
+
+                    <li><strong>Challenges and Future Scope:</strong> While renewable energy technologies are advancing, the paper points out that more efficient energy storage solutions are crucial to overcoming the limitations of intermittent power generation. The authors discuss the future potential of emerging technologies like stacked concrete blocks for home energy storage, hydrogen fuel cells, and advanced CAES systems.</li>
+                </ul>
+
+                <p>The review concludes by emphasizing the need for continued research and innovation to enhance energy storage capabilities and support the growing reliance on renewable energy sources.</p>
+                
+                <!-- Add images here -->
+                <div style="display: flex; flex-wrap: wrap; justify-content: flex-start;">
+                    <img src="images/caes.webp" alt="Compressed Air Energy Storage" class="publication-image" onclick="openModal(this)">
+                    <img src="images/flywheel.webp" alt="Flywheel Energy Storage" class="publication-image" onclick="openModal(this)">
+                    <img src="images/Liion.webp" alt="Lithium-ion Batteries" class="publication-image" onclick="openModal(this)">
+                    <img src="images/methane.png" alt="Methane Storage" class="publication-image" onclick="openModal(this)">
+                    <img src="images/pem.png" alt="PEM Fuel Cells" class="publication-image" onclick="openModal(this)">
+                    <img src="images/pumpedhydro.jpg" alt="Pumped Hydro Storage" class="publication-image" onclick="openModal(this)">
+                    <img src="images/thermophoto.webp" alt="Thermal Energy Storage" class="publication-image" onclick="openModal(this)">
+                </div>
+            </div>
+        </div>
+
+        <!-- Back to homepage button -->
+        <a href="index.html" class="back-button">Back to Home</a>
+    </div>
+
+    <!-- Modal for enlarged images -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        function openModal(img) {
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+
+            modal.style.display = "flex"; // Display modal
+            modalImg.src = img.src; // Set the image source
+            captionText.innerHTML = img.alt; // Set the caption to the alt text of the image
+        }
+
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none"; // Hide the modal
+        }
+    </script>
+</body>
+</html>

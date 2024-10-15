@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning and Data Analytics Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #FF6347; /* Tomato color for headings */
+        }
+
+        .github-link {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #FF6347; /* Tomato color for the link */
+            border: 1px solid #FF6347;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .github-link:hover {
+            background-color: #FF6347;
+            color: white;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .project {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="https://github.com/sushyanthsridhar" class="github-link" target="_blank">GitHub Profile</a>
+
+    <div class="content">
+        <h1>Machine Learning and Data Analytics Projects</h1>
+
+        <div class="project">
+            <h2>Extension to Portfolio Report: Vaccine Distribution Optimization Using Gurobi and Greedy Heuristic</h2>
+            <p>This project builds on my existing expertise in modeling dynamic systems by focusing on optimizing the distribution of vaccines across multiple locations. With the new vaccine distribution model, I showcase my ability to solve complex logistics problems using both exact optimization methods and heuristic algorithms. This addition complements previous projects like the Mosquito Population Dynamics Simulation by addressing real-world scenarios involving both biological systems and supply chain logistics.</p>
+
+            <h3>Vaccine Distribution Optimization: Overview</h3>
+            <p>The objective was to deliver three types of vaccines to 200 nodes while minimizing the total travel distance. Key constraints included vaccine-specific delivery windows, cooling requirements, vehicle capacities, and fuel limits. The model used two approaches:</p>
+
+            <h4>Gurobi Optimization:</h4>
+            <ul>
+                <li>Applied Mixed-Integer Linear Programming (MILP) to find the optimal route.</li>
+                <li>Incorporated subtour elimination constraints and time-dependent delivery requirements.</li>
+                <li>Ensured vaccines were delivered efficiently within fuel and capacity limits.</li>
+            </ul>
+
+            <h4>Greedy Heuristic:</h4>
+            <ul>
+                <li>Implemented a nearest-neighbor heuristic to assign routes quickly by choosing the closest unvisited node.</li>
+                <li>Offered a scalable solution for large datasets, focusing on speed and feasibility, though with slightly reduced precision compared to the Gurobi approach.</li>
+            </ul>
+
+            <h3>Impact and Complementary Skills</h3>
+            <p>This project aligns well with previous work such as the Mosquito Population Dynamics Simulation, which required dynamic modeling and seasonal data analysis. Both projects required attention to time-dependent trends and resource allocation—in one case, biological populations, and in the other, vaccines and logistics.</p>
+
+            <h4>New Skills:</h4>
+            <ul>
+                <li>Logistics optimization with Gurobi</li>
+                <li>Greedy heuristics for fast, scalable solutions</li>
+                <li>Handling time-window constraints and capacity limits</li>
+            </ul>
+
+            <h4>Cross-Project Connections:</h4>
+            <ul>
+                <li>Similar to modeling mosquito lifecycles, the vaccine project required monitoring and managing dynamic systems over time.</li>
+                <li>Both projects involved balancing multiple constraints (e.g., mortality vs. developmental rates in mosquito populations, and cooling vs. delivery windows in vaccine distribution).</li>
+            </ul>
+        </div>
+
+        <!-- Add other projects here -->
+
+        <div class="project">
+            <h2>Time Series Forecasting with Prophet</h2>
+            <p>In this project, you implemented time series forecasting using Facebook’s Prophet model to analyze trends in product demand. The model used:</p>
+            <ul>
+                <li>Logistic growth to handle capacity constraints.</li>
+                <li>Seasonal decomposition to capture multiplicative seasonal effects.</li>
+                <li>Forecasting techniques that ensured continuity in predictions by filling missing data.</li>
+            </ul>
+            <p>You evaluated the forecasted results using Root Mean Square Error (RMSE) and R² scores to ensure accuracy. The final predictions were exported to a CSV file, and the methodology incorporated sensitivity analysis to assess the model’s robustness under varying trends.</p>
+            <p><strong>Key Skills:</strong> Time series forecasting, Prophet for logistic growth, Data visualization and performance metrics</p>
+        </div>
+
+        <div class="project">
+            <h2>Optimization Model for Lot Sizing Problem</h2>
+            <p>This project tackled a capacitated lot-sizing problem, where the aim was to minimize the total production, setup, and inventory holding costs over a multi-period horizon. Using CPLEX with Docplex, you modeled the optimal production schedule, inventory levels, and setup decisions.</p>
+            <p><strong>Key Skills:</strong> Integer programming with Docplex, Sensitivity analysis, Production and logistics optimization</p>
+        </div>
+
+        <div class="project">
+            <h2>Mosquito Population Dynamics Simulation</h2>
+            <p>In this project, you built a compartmental model to simulate the lifecycle of mosquitoes, tracking the population across five key stages: eggs, larvae, pupae, young adults, and old adults. Using daily time-stepped simulation, the project modeled developmental and mortality rates with sinusoidal functions to reflect seasonal variations.</p>
+            <p><strong>Key Skills:</strong> Compartmental modeling, Sinusoidal functions for seasonal patterns, Data visualization with Matplotlib</p>
+        </div>
+
+        <div class="project">
+            <h2>Sentiment Analysis on Amazon Packaging Reviews</h2>
+            <p>This project applied Natural Language Processing (NLP) techniques to analyze Amazon reviews on product packaging. Using Logistic Regression and Decision Tree models, you built a system to classify reviews into three categories: Bad, Neutral, and Good.</p>
+            <p><strong>Key Skills:</strong> NLP with TF-IDF vectorization, Logistic Regression and Decision Tree models, Model evaluation and cross-validation</p>
+        </div>
+
+        <div class="project">
+            <h2>Advanced Multi-Model Sentiment Analysis with Cross-Validation</h2>
+            <p>Building on the previous sentiment analysis project, this extension included cross-validation (CV) with 5-fold validation to ensure that the models generalized well. The Logistic Regression and Decision Tree models were compared in terms of:</p>
+            <ul>
+                <li>Validation accuracy and performance on unseen data.</li>
+                <li>Precision, recall, and F1-score for each sentiment category.</li>
+            </ul>
+            <p><strong>Key Skills:</strong> Cross-validation for model generalization, Real-time sentiment prediction on new data, Performance comparison between multiple models</p>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushyanth Sridhar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            position: relative; /* Allow absolute positioning inside */
+        }
+
+        .top-right-text {
+            position: absolute; /* Position it relative to the body */
+            top: 20px; /* Adjust the distance from the top */
+            right: 20px; /* Adjust the distance from the right */
+            color: white; /* Color of the text */
+            font-size: 18px; /* Font size */
+            z-index: 10; /* Make sure it stays above other elements */
+        }
+
+        .content {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .circle-menu {
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid white;
+        }
+
+        .circle-menu div {
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 1px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s;
+            cursor: pointer;
+            padding: 10px;
+            box-sizing: border-box;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .circle-menu div:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .mechanical {
+            top: 0;
+            left: 0;
+            transform: rotate(0deg) translate(100%, 0) rotate(0deg);
+            background-image: url('./images/Mech.jpg');
+        }
+
+        .operations-research {
+            top: 0;
+            right: 0;
+            transform: rotate(90deg) translate(100%, 0) rotate(-90deg);
+            background-image: url('./images/OR.jpg'); /* Adjust path if needed */
+        }
+
+        .machine-learning {
+            bottom: 0;
+            right: 0;
+            transform: rotate(180deg) translate(100%, 0) rotate(-180deg);
+            background-image: url('./images/ML.jpg'); /* Adjust path if needed */
+        }
+
+        .creativity {
+            bottom: 0;
+            left: 0;
+            transform: rotate(270deg) translate(100%, 0) rotate(-270deg);
+            background-image: url('./images/Creat.jpeg'); /* Adjust path if needed */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Contact details in the top right corner -->
+    <div class="top-right-text">
+        CONTACT <br>
+        Phone: +1 (629) 587-3400 <br>
+        Mail: <a href="mailto:sushyanthsridhar@gmail.com" style="color:white;">sushyanthsridhar@gmail.com</a>
+    </div>
+
+    <div class="content">
+        <h1>SUSHYANTH SRIDHAR</h1>
+        <p> Bachelor of Technology: Mechanical Engineering <br> Master of Engineering: Industrial and Systems Engineering</p>
+        <p>PORTFOLIO</p>
+    </div>
+
+    <div class="circle-menu">
+        <div class="mechanical" onclick="location.href='mechanical.html';">Mechanical<br>Manufacturing</div>
+        <div class="operations-research" onclick="location.href='operations_research.html';">Operations<br>Research</div>
+        <div class="machine-learning" onclick="location.href='machine_learning.html';">Machine Learning<br>Data Analytics</div>
+        <div class="creativity" onclick="location.href='creativity.html';">Resume</div>
+    </div>
+</body>
+</html>
